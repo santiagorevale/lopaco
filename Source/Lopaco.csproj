@@ -36,9 +36,21 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlgorithmController.cs" />
+    <Compile Include="Ant.cs" />
+    <Compile Include="AntsGenerator.cs" />
+    <Compile Include="IPheromoneUpdater.cs" />
+    <Compile Include="Strategies\OneAntPerNodeGenerator.cs" />
+    <Compile Include="AntsController.cs" />
+    <Compile Include="IAntsGenerator.cs" />
+    <Compile Include="IFitness.cs" />
+    <Compile Include="Strategies\PheromoneUpdater.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IStopCondition.cs" />
+    <Compile Include="Strategies\FixedIterationsStop.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
