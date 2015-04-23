@@ -1,0 +1,1 @@
+An open source implementation of an ant colony optimization library for the linear ordering problem, using C# and .NET generics.
